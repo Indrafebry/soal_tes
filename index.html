@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TES CODING GSI</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+    .container {
+      width: 70%;
+      text-align: center;
+    }
+    .inputContainer {
+      font-size: 23px;
+      font-weight: bold;
+    }
+    table {
+      max-height: 400px;
+      overflow-y: scroll;
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    input {
+      width: 300px;
+      height: 50px;
+      border-radius: 10px;
+      padding: 0px 30px;
+    }
+    button {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inputContainer">
+      <label for="inputValue">Input Value</label>
+      <div>
+        <input id="inputValue" type="text" placeholder="Masukkan kalimat...">
+        <button type="submit" id="submitButton">Submit</button>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Input</th>
+          <th>Explanation</th>
+          <th>Output</th>
+        </tr>
+      </thead>
+      <tbody id="resultTable">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
